@@ -1,8 +1,10 @@
 ---
-- name: Pull docker image of speminiproject
-  hosts: all
+- hosts: localhost
   tasks:
-    - name: Pull image
-      docker_image:
-        name: jaswanth6008/junit-devops
-        source: pull
+  - name: Pull docker image of speminiproject
+    hosts: all
+    tasks:
+      - name: Pull image
+        docker_image:
+          name: jaswanth6008/devops
+          source: pull
