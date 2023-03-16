@@ -1,1 +1,1 @@
-localhost
+172.16.138.211 ansible_ssh_user=jsw ansible_ssh_password=GO
