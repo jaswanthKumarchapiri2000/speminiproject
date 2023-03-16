@@ -1,18 +1,19 @@
 ---
-- hosts: localhost
+- name: Pull docker image of speminiproject
+  hosts: all
+  vars:
+    ansible_python_interpreter: /usr/bin/pyhton3
   tasks:
-  - name: Pull docker image of speminiproject
-    hosts: all
-    tasks:
-      - name: Pull image
-        docker_image:
-          name: jaswanth6008/devops
-          source: pull
+    - name: Pull image
+      docker_image:
+        name: jaswanth6008/devops
+        tag: latest
+        source: pull
 
-      - name: Create & Start Calculator Docker Container
-        docker_container:
-            name: calculator-using-devops
-            image: jaswanth6008/devops
-            state: started
-            tty: yes
-            interactive: yes
+    - name: Create & Start Calculator Docker Container
+      docker_container:
+          name: calculator-using-devops
+          image: jaswanth6008/devops
+          state: started
+          tty: yes
+          interactive: yes
