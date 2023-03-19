@@ -1,0 +1,4 @@
+2023-03-19 17:54:36.660 [main] INFO  calculator.Main - [FACTORIAL] - 4
+2023-03-19 17:54:36.662 [main] INFO  calculator.Main - [RESULT - FACTORIAL] - 24
+2023-03-19 17:54:50.457 [main] INFO  calculator.Main - [POWER - 2.0 RAISED TO] 4.0
+2023-03-19 17:54:50.457 [main] INFO  calculator.Main - [RESULT - POWER] - 16.0
