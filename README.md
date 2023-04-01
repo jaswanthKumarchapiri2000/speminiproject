@@ -1,2 +1,2 @@
 # speminiproject
-# This is a CI/CD Autmation project
+# This is a CI/CD  project
